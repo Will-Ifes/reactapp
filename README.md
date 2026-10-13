@@ -2,24 +2,30 @@
 
 Registro de nomes e horários com perfil consultado na API do GitHub.
 
-## Contexto e objetivo
-
 Estudo de React 18, Vite, props, estado e efeitos.
 
-## Funcionalidades presentes
+## Destaques
 
 - Inclusão de nomes com horário de registro.
 - Cartões renderizados a partir do estado.
 - Consulta de nome e avatar do GitHub.
 
-## Por dentro do código
+<details>
+<summary><strong>Organização e código</strong></summary>
+
+### Por dentro do código
 
 | Código | O que observar |
 | --- | --- |
 | [`src/pages/Home/index.jsx`](src/pages/Home/index.jsx) | Estado e carregamento de perfil. |
 | [`src/components/Card/index.jsx`](src/components/Card/index.jsx) | Apresentação dos registros. |
 
-## Executar localmente
+</details>
+
+<details>
+<summary><strong>Executar e consultar</strong></summary>
+
+### Executar localmente
 
 Requer Node.js e npm compatíveis com as dependências versionadas.
 
@@ -32,9 +38,7 @@ npm run dev
 
 Abra o endereço informado pelo servidor no terminal.
 
-
-
-## Comandos disponíveis
+### Comandos disponíveis
 
 | Comando | Script versionado |
 | --- | --- |
@@ -42,11 +46,14 @@ Abra o endereço informado pelo servidor no terminal.
 | `npm run build` | `vite build` |
 | `npm run preview` | `vite preview` |
 
-Os comandos refletem o `package.json`. A existência de um script não comprova execução bem-sucedida no ambiente atual.
+</details>
 
-## Escopo e evolução
+<details>
+<summary>Escopo e referências</summary>
 
-Os registros ficam em memória. Validação de nomes, identificadores estáveis, persistência e tratamento de erro são evoluções possíveis.
+Os registros ficam em memória.
+
+</details>
 
 ---
 
