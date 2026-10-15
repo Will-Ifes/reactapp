@@ -1,0 +1,70 @@
+.formulario {
+    display: grid;
+    gap: 6px;
+}
+
+.formulario__rotulo {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Campo e botão formam um controle composto: mesma altura por fora */
+.formulario__linha {
+    display: flex;
+    gap: var(--wl-space-2);
+}
+
+.formulario__linha input {
+    flex: 1;
+    min-width: 0;
+    min-height: calc(var(--wl-control) + 8px);
+    padding: 0 var(--wl-space-4);
+    border: 1px solid var(--wl-border);
+    border-radius: var(--wl-radius-control);
+    background: var(--wl-surface);
+    font-size: 16px;
+    transition: border-color 120ms var(--wl-ease);
+}
+
+.formulario__linha input::placeholder {
+    color: var(--wl-secondary);
+}
+
+.formulario__linha input:hover {
+    border-color: var(--wl-text);
+}
+
+.formulario__linha input[aria-invalid='true'] {
+    border-color: var(--wl-danger);
+}
+
+.formulario__linha .btn {
+    min-height: calc(var(--wl-control) + 8px);
+    padding: 0 var(--wl-space-6);
+}
+
+.formulario__ajuda,
+.formulario__erro {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.formulario__ajuda {
+    color: var(--wl-secondary);
+}
+
+.formulario__erro {
+    color: var(--wl-danger);
+    font-weight: 500;
+}
+
+kbd {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 6px;
+    border: 1px solid var(--wl-line);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    font: 500 12px/18px var(--wl-font-mono);
+    text-align: center;
+}
