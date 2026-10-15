@@ -1,53 +1,48 @@
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.pagina {
+    width: min(1120px, 100% - 40px);
+    margin: 0 auto;
 }
 
-.container header {
-    width: 50%;
-    margin: 84px 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Mobile first: uma coluna; painel da turma vem depois da lista */
+.pagina__conteudo {
+    display: grid;
+    gap: var(--wl-space-6);
+    padding: var(--wl-space-8) 0 var(--wl-space-12);
 }
 
-.container header img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-left: 7px;
+.pagina__principal {
+    display: grid;
+    align-content: start;
+    gap: var(--wl-space-6);
 }
 
-.container header div {
-    display: flex;
-    align-items: center;
+.pagina__titulo {
+    display: grid;
+    gap: var(--wl-space-2);
 }
 
-.container input {
-    width: 50%;
-    padding: 24px;
-    background-color: #e6e6e6;
-    border-radius: 5px;
-    border: none;
-
-    font-size: 16px;
-}
-
-.container button {
-    width: 50%;
-    padding: 24px;
+.pagina__titulo h1 {
+    font-size: clamp(32px, 6vw, 46px);
     font-weight: 700;
-    font-size: 16px;
-    background-color: #ea4c89;
-    color: #ffffff;
-    border-radius: 5px;
-    margin: 12px 0 84px;
-    border: 0;
-    cursor: pointer;
-    transition: filter 0.2s;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
 }
 
-.container button:hover {
-    filter: brightness(0.9);
+.pagina__rodape {
+    padding: var(--wl-space-6) 0 var(--wl-space-8);
+    border-top: 1px solid var(--wl-line);
+}
+
+@media (min-width: 850px) {
+    .pagina__conteudo {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: var(--wl-space-8);
+        padding-top: var(--wl-space-12);
+    }
+
+    .pagina__conteudo > .painel {
+        position: sticky;
+        top: var(--wl-space-6);
+        align-self: start;
+    }
 }

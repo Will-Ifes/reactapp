@@ -1,0 +1,116 @@
+.lista {
+    border: 1px solid var(--wl-line);
+    border-radius: var(--wl-radius-surface);
+    background: var(--wl-surface);
+    overflow: hidden;
+}
+
+.lista__topo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--wl-space-3);
+    padding: var(--wl-space-4) var(--wl-space-4) var(--wl-space-4) var(--wl-space-6);
+    border-bottom: 1px solid var(--wl-line);
+}
+
+.lista__topo h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lista__controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--wl-space-2);
+}
+
+.lista__controles input {
+    width: 180px;
+    min-height: var(--wl-control);
+    padding: 0 var(--wl-space-3);
+    border: 1px solid var(--wl-border);
+    border-radius: var(--wl-radius-control);
+    background: var(--wl-bg);
+    font-size: 14px;
+}
+
+.lista__controles input::placeholder {
+    color: var(--wl-secondary);
+}
+
+/* Controle segmentado */
+.lista__ordem {
+    display: flex;
+    padding: 3px;
+    border: 1px solid var(--wl-border);
+    border-radius: var(--wl-radius-control);
+}
+
+.lista__ordem button {
+    min-height: calc(var(--wl-control) - 8px);
+    padding: 0 var(--wl-space-3);
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--wl-secondary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lista__ordem button[aria-pressed='true'] {
+    background: var(--wl-accent);
+    color: var(--wl-on);
+}
+
+.lista__ordem button:disabled,
+.lista__controles input:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.lista__itens {
+    list-style: none;
+}
+
+.lista__vazia {
+    display: grid;
+    justify-items: center;
+    gap: var(--wl-space-2);
+    padding: var(--wl-space-12) var(--wl-space-6);
+    color: var(--wl-secondary);
+    text-align: center;
+}
+
+.lista__vazia strong {
+    color: var(--wl-text);
+}
+
+.lista__vazia-selo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--wl-space-2);
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--wl-muted) 50%, var(--wl-line) 50%);
+}
+
+.lista__sem-resultado {
+    padding: var(--wl-space-8) var(--wl-space-6);
+    color: var(--wl-secondary);
+}
+
+@media (max-width: 600px) {
+    .lista__topo {
+        padding: var(--wl-space-4);
+    }
+
+    .lista__controles,
+    .lista__controles input {
+        width: 100%;
+    }
+
+    .lista__controles input {
+        flex: 1;
+    }
+}
