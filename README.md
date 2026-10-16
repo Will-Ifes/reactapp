@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./.github/readme-cover.svg" alt="Lista de presença: Entrada do usuário, estado e componentes." width="100%" />
+  <a href="https://will-ifes.github.io/reactapp/">
+    <img src="./.github/readme-cover.svg?v=20261016" alt="Lista de presença. Registro de chegadas na identidade Paper e Forest." width="100%" />
+  </a>
 </p>
 
 # Lista de presença · React
@@ -9,7 +11,11 @@ Uma chamada de turma que registra o horário de chegada de cada aluno, recusa no
 **React 19 · TypeScript · Vite 8 · Vitest** · [Ver online](https://will-ifes.github.io/reactapp/)
 
 <p align="center">
-  <img src="./.github/demo.gif" alt="Demonstração: três alunos registrados com Enter, um nome repetido recusado com mensagem, um aluno removido e devolvido com Desfazer, a lista ordenada de A a Z e a troca para o tema escuro." width="760" />
+  <a href="https://will-ifes.github.io/reactapp/">
+    <img src="./.github/demo.gif" alt="Demonstração: três alunos registrados com Enter, um nome repetido recusado com mensagem, um aluno removido e devolvido com Desfazer, a lista ordenada de A a Z e a troca para o tema escuro." width="760" />
+  </a>
+  <br />
+  <sub>Clique na demonstração para abrir a página publicada.</sub>
 </p>
 
 ## O que dá para fazer
